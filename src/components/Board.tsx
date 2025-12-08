@@ -72,12 +72,17 @@ export default function Board() {
   return (
     <div className="space-y-4 font-poppins ">
       <header className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
+        <div className='flex flex-col justify-center items-start'>
           <h1 className="text-xl md:text-4xl text-center mb-2 font-semibold text-slate-50">
             Task Management Board
           </h1>
           <p className="text-sm text-center md:text-lg text-slate-400">
             Drag tasks between columns to track progress.
+          </p>
+
+          <p className='text-white text-xs bg-red-800/80 mt-2 px-1 py-0 md:px-2 md:py-1 rounded-xl text-center '>
+            <span className=' text-white font-semibold'>NOTE:- </span>
+            Double tap on "Edit" and "Delete" button to work properly. 
           </p>
         </div>
       </header>
