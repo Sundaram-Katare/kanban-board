@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kanban Task Management Board
 
-## Getting Started
+A modern, responsive Kanban-style task board built with Next.js 15, TypeScript, and Tailwind CSS. Manage your tasks across different stages with smooth drag-and-drop functionality.
 
-First, run the development server:
+🔗 **[Live Demo](https://your-deployed-url.vercel.app)**  
+🎥 **[Video Walkthrough](https://your-loom-video-link)**
 
+---
+
+## ✨ Features
+
+- Create, edit, and delete tasks with title and description
+- Drag and drop tasks between columns (To Do, In Progress, Done)
+- Data persistence using localStorage
+- Fully responsive design for mobile and desktop
+- Real-time task count per column
+
+---
+
+## 🚀 Setup Instructions
+
+### Installation
+
+1. **Fork the repository**
+
+2. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ git clone https://github.com/username/kanban-board
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Install Dependencies**
+```bash
+ npm install 
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Run the development server**
+```bash
+ npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. **Navigate to localhost://3000**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack Explanation
 
-## Deploy on Vercel
+**Next.js 15 (App Router):** Chose Next.js for its built-in optimization, server-side rendering capabilities, and excellent developer experience with the new App Router providing better performance and cleaner routing structure.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**TypeScript:** Ensures type safety throughout the application, reducing runtime errors and improving code maintainability and readability.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Tailwind CSS:** Enables rapid UI development with utility-first classes and for styling the UI.
+
+**ShadCN** Used the `sonner` component of shadCN library to get a toast message on adding or deleting the tasks.
+
+**dnd-kit:** Selected over react-beautiful-dnd because it's actively maintained, has better TypeScript support, and provides more flexibility for custom drag-and-drop interactions.
+
+**localStorage:** Provides instant data persistence without backend setup, making the app functional immediately while maintaining simplicity for the assignment scope.
+
+---
+
+## 🤖 AI Tool Usage
+
+**ChatGPT & Claude:** Used for understanding dnd-kit documentation, and debugging TypeScript type issues. Also used for optimizing Tailwind CSS utility classes and suggesting best practices for React hooks.
+
+**Key Note:** All AI-generated code was reviewed, understood, and modified to fit the specific requirements and maintain clean code standards.
+
+---
+
+##  Known Issue
+
+**localStorage Limitations:** Data is stored only in the browser's localStorage, meaning tasks won't sync across different devices or browsers. Future enhancement could implement a backend API with database storage.
+
+---
+
+## Author 🙋
+**Sundaram Katare**
+
+Built with 🧠
